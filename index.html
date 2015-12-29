@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>AJAX Study</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<div class="container">
+			<h1 class="header-text">jQuery Ajax</h1>
+
+			<h2>Coffee Orders</h2>
+			<ul id="orders"></ul>
+
+			<!-- template for js -->
+			<template id="order-template">
+					<li>
+						<p class='infoblock'>
+							<strong>Name:</strong> 
+							<span class="noedit name">{{name}}</span>
+							<input class="edit name">
+						</p>
+						<p class='infoblock'>
+							<strong>Drink:</strong>
+							<span class="noedit drink">{{drink}}</span>
+							<input class="edit drink">
+						</p>
+						<button data-id='{{id}}' class='remove'>x</button>
+						<button class='editOrder noedit'>Edit</button>
+						<button class='saveEdit edit'>Save</button>
+						<button class='cancelEdit edit'>Cancel</button>
+						<div class="clearfix"></div>
+
+					</li>
+			</template>
+			<!-- template end -->
+
+			<h3>Add a Coffee Order</h3>
+			<p>name: <input type="text" id="name"></p>
+			<p>drink: <input type="text" id="drink"></p>
+			<button id="add-order">Add new order</button>
+
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/mustache.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+p {
+	margin: 0
+}
+
+#orders {
+	margin-bottom: 30px;
+}
+
+#orders li {
+	background-color: lightgray;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+button {
+	position: relative;
+	padding: 0 5px;	
+	top: -3px;
+	float: right;
+	margin-right: 4px; 
+}
+
+.infoblock {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#name,
+#drink {
+	margin-bottom: 10px;
+}
+
+#add-order {
+	border: none;
+	padding: 5px 28px;
+	background-color: #389ed8;
+	color: white;
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.header-text {
+	text-align: center;
+}
+
+ul li .edit {
+	display: none;
+}
+
+ul li.edit .edit {
+	display: initial;
+}
+
+ul li.edit .noedit {
+	display: none;
+}
