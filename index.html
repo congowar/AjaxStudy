@@ -16,7 +16,7 @@
 
 			<!-- template for js -->
 			<template id="order-template">
-					<li>
+					<li data-id="{{id}}">
 						<p class='infoblock'>
 							<strong>Name:</strong> 
 							<span class="noedit name">{{name}}</span>
@@ -31,8 +31,8 @@
 						<button class='editOrder noedit'>Edit</button>
 						<button class='saveEdit edit'>Save</button>
 						<button class='cancelEdit edit'>Cancel</button>
-						<div class="clearfix"></div>
 
+						<div class="clearfix"></div>
 					</li>
 			</template>
 			<!-- template end -->
