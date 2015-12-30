@@ -90,6 +90,7 @@ $(function (){
 			},
 			error: function() {
 				alert('error updating order');
+				alert('error updating order');
 			}
 		});
 
